@@ -5,6 +5,11 @@
       "release-type": "go",
       "component": "google-workspace",
       "changelog-path": "CHANGELOG.md"
+    },
+    "zoho-mail": {
+      "release-type": "go",
+      "component": "zoho-mail",
+      "changelog-path": "CHANGELOG.md"
     }
   },
   "initial-version": "0.1.0",
