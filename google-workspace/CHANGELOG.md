@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.0](https://github.com/panthrocorp/openclaw-skills/compare/google-workspace/v0.1.0...google-workspace/v0.1.0) (2026-03-29)
+
+
+### Bug Fixes
+
+* GoReleaser monorepo tag handling ([#8](https://github.com/panthrocorp/openclaw-skills/issues/8)) ([baf49e0](https://github.com/panthrocorp/openclaw-skills/commit/baf49e03d3f514e99c53ed12520de92746d7878f))
+
 ## 0.1.0 (2026-03-29)
 
 
