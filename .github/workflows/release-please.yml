@@ -18,6 +18,8 @@ jobs:
       paths_released: ${{ steps.release.outputs.paths_released }}
       gw_release_created: ${{ steps.release.outputs['google-workspace--release_created'] }}
       gw_tag_name: ${{ steps.release.outputs['google-workspace--tag_name'] }}
+      zm_release_created: ${{ steps.release.outputs['zoho-mail--release_created'] }}
+      zm_tag_name: ${{ steps.release.outputs['zoho-mail--tag_name'] }}
     steps:
       - uses: googleapis/release-please-action@v4
         id: release
@@ -66,6 +68,57 @@ jobs:
       - name: Upload assets to release
         run: |
           TAG="${{ needs.release-please.outputs.gw_tag_name }}"
+          gh release upload "$TAG" dist/*.tar.gz dist/checksums.txt
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Publish to clawhub
+        if: success()
+        run: npx clawhub@latest publish .
+        env:
+          CLAWHUB_TOKEN: ${{ secrets.CLAWHUB_TOKEN }}
+
+  publish-zoho-mail:
+    name: Publish zoho-mail
+    needs: release-please
+    if: needs.release-please.outputs.zm_release_created == 'true'
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: zoho-mail
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+          ref: ${{ needs.release-please.outputs.zm_tag_name }}
+
+      - name: Create local version tag
+        id: version
+        run: |
+          TAG="${{ needs.release-please.outputs.zm_tag_name }}"
+          VERSION="${TAG#zoho-mail/}"
+          git tag "$VERSION"
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/setup-go@v6
+        with:
+          go-version-file: zoho-mail/go.mod
+
+      - name: Test before release
+        run: go test -race -count=1 ./...
+
+      - name: Run GoReleaser
+        uses: goreleaser/goreleaser-action@v7
+        with:
+          args: release --clean
+          workdir: zoho-mail
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GORELEASER_CURRENT_TAG: ${{ steps.version.outputs.version }}
+
+      - name: Upload assets to release
+        run: |
+          TAG="${{ needs.release-please.outputs.zm_tag_name }}"
           gh release upload "$TAG" dist/*.tar.gz dist/checksums.txt
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
