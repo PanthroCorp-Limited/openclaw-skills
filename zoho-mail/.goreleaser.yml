@@ -1,0 +1,33 @@
+version: 2
+
+project_name: zoho-mail
+
+builds:
+  - id: zoho-mail
+    main: .
+    binary: zoho-mail
+    goos:
+      - linux
+      - darwin
+    goarch:
+      - amd64
+      - arm64
+    env:
+      - CGO_ENABLED=0
+    ldflags:
+      - -s -w
+      - -X main.version={{ .Version }}
+
+archives:
+  - id: zoho-mail
+    format: tar.gz
+    name_template: "zoho-mail_{{ .Version }}_{{ .Os }}_{{ .Arch }}"
+
+checksum:
+  name_template: "checksums.txt"
+
+release:
+  disable: true
+
+changelog:
+  disable: true

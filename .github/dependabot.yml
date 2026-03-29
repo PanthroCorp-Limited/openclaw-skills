@@ -11,6 +11,16 @@ updates:
       - dependencies
     open-pull-requests-limit: 5
 
+  - package-ecosystem: gomod
+    directory: /zoho-mail
+    schedule:
+      interval: weekly
+    commit-message:
+      prefix: "fix"
+    labels:
+      - dependencies
+    open-pull-requests-limit: 5
+
   - package-ecosystem: github-actions
     directory: /
     schedule:
