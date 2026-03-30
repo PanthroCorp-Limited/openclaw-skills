@@ -1,0 +1,44 @@
+{
+  "cli_version": "0.5.1",
+  "checkpoint_id": "c132d01ff7ad",
+  "strategy": "manual-commit",
+  "branch": "fix/github-org-rename",
+  "checkpoints_count": 0,
+  "files_touched": [
+    "CONTRIBUTING.md",
+    "SECURITY.md",
+    "google-workspace/CHANGELOG.md",
+    "google-workspace/SKILL.md",
+    "google-workspace/cmd/auth.go",
+    "google-workspace/cmd/calendar.go",
+    "google-workspace/cmd/config.go",
+    "google-workspace/cmd/contacts.go",
+    "google-workspace/cmd/gmail.go",
+    "google-workspace/go.mod",
+    "google-workspace/internal/google/calendar.go",
+    "google-workspace/internal/oauth/token.go",
+    "google-workspace/main.go",
+    "zoho-mail/CHANGELOG.md",
+    "zoho-mail/SKILL.md",
+    "zoho-mail/cmd/auth.go",
+    "zoho-mail/cmd/mail.go",
+    "zoho-mail/go.mod",
+    "zoho-mail/internal/oauth/token.go",
+    "zoho-mail/main.go"
+  ],
+  "sessions": [
+    {
+      "metadata": "/c1/32d01ff7ad/0/metadata.json",
+      "transcript": "/c1/32d01ff7ad/0/full.jsonl",
+      "content_hash": "/c1/32d01ff7ad/0/content_hash.txt",
+      "prompt": "/c1/32d01ff7ad/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 81,
+    "cache_creation_tokens": 171182,
+    "cache_read_tokens": 7824783,
+    "output_tokens": 10970,
+    "api_call_count": 54
+  }
+}
