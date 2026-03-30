@@ -22,6 +22,19 @@ metadata:
 
 Access Gmail (read-only), Google Calendar (configurable), and Google Contacts (read-only).
 
+## Installation
+
+Download the latest release binary for linux/arm64 and install to `~/.openclaw/bin/`:
+
+```bash
+TAG=$(curl -fsSL "https://api.github.com/repos/PanthroCorp-Limited/openclaw-skills/releases" \
+  | grep -o '"tag_name":"google-workspace/v[^"]*"' | head -1 | cut -d'"' -f4)
+VERSION=${TAG#google-workspace/v}
+curl -fsSL "https://github.com/PanthroCorp-Limited/openclaw-skills/releases/download/${TAG}/google-workspace_${VERSION}_linux_arm64.tar.gz" \
+  | tar -xz -C ~/.openclaw/bin/ google-workspace
+chmod +x ~/.openclaw/bin/google-workspace
+```
+
 ## Important
 
 - Gmail is strictly read-only. You cannot send, modify, or delete emails.
