@@ -1,0 +1,35 @@
+2
+
+---
+
+how was google workspace distributed then?
+
+---
+
+chck that https://clawhub.ai/panthrocorp/panthrocorp-zoho-mail is correct
+
+[Image #1] 
+
+what is this all about
+
+---
+
+ok, so clawhub does not distribute binaries?
+
+The user will always have to build them themselves/
+
+---
+
+can we not store them as releases on github, and then the skill is told to pull the release binaries/
+
+---
+
+skills repo should eb public
+
+---
+
+always pull latest
+
+SO want i want, we shoudl create a gh release for zogo and google (and any others)
+
+Then the skill shoudl give instructs on how to download and use the release, defaulting to latest
