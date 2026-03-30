@@ -22,6 +22,19 @@ metadata:
 
 Full read/write access to a Zoho Mail account (EU data centre).
 
+## Installation
+
+Download the latest release binary for linux/arm64 and install to `~/.openclaw/bin/`:
+
+```bash
+TAG=$(curl -fsSL "https://api.github.com/repos/PanthroCorp-Limited/openclaw-skills/releases" \
+  | grep -o '"tag_name":"zoho-mail/v[^"]*"' | head -1 | cut -d'"' -f4)
+VERSION=${TAG#zoho-mail/v}
+curl -fsSL "https://github.com/PanthroCorp-Limited/openclaw-skills/releases/download/${TAG}/zoho-mail_${VERSION}_linux_arm64.tar.gz" \
+  | tar -xz -C ~/.openclaw/bin/ zoho-mail
+chmod +x ~/.openclaw/bin/zoho-mail
+```
+
 ## Important
 
 OAuth tokens are encrypted at rest. The operator must run `zoho-mail auth login` once after deployment to complete the OAuth flow.
