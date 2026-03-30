@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/PanthroCorp-Limited/openclaw-skills/compare/google-workspace/v0.2.0...google-workspace/v0.2.1) (2026-03-30)
+
+
+### Bug Fixes
+
+* update GitHub org to PanthroCorp-Limited ([#22](https://github.com/PanthroCorp-Limited/openclaw-skills/issues/22)) ([7b745b4](https://github.com/PanthroCorp-Limited/openclaw-skills/commit/7b745b4e1950bac3afd7595a78bdf0e116919ff0))
+
 ## [0.2.0](https://github.com/PanthroCorp-Limited/openclaw-skills/compare/google-workspace/v0.1.0...google-workspace/v0.2.0) (2026-03-29)
 
 
