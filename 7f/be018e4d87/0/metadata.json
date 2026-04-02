@@ -1,0 +1,37 @@
+{
+  "cli_version": "0.5.1",
+  "checkpoint_id": "7fbe018e4d87",
+  "session_id": "6dc18778-5e96-4800-8a13-4e327516745c",
+  "strategy": "manual-commit",
+  "created_at": "2026-04-02T12:05:54.406193551Z",
+  "branch": "fix/release-please-skill-version",
+  "checkpoints_count": 0,
+  "files_touched": [
+    "google-workspace/SKILL.md",
+    "zoho-mail/SKILL.md",
+    ".release-please-config.json"
+  ],
+  "agent": "Claude Code",
+  "turn_id": "013b6a6391ee",
+  "checkpoint_transcript_start": 292,
+  "transcript_lines_at_start": 292,
+  "token_usage": {
+    "input_tokens": 24,
+    "cache_creation_tokens": 9612,
+    "cache_read_tokens": 2109859,
+    "output_tokens": 3850,
+    "api_call_count": 22
+  },
+  "session_metrics": {
+    "turn_count": 6
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-04-02T12:05:54.178651962Z",
+    "agent_lines": 6,
+    "human_added": 8,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 14,
+    "agent_percentage": 42.857142857142854
+  }
+}
