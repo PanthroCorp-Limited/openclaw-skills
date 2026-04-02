@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://github.com/PanthroCorp-Limited/openclaw-skills/compare/google-workspace/v0.4.3...google-workspace/v0.5.0) (2026-04-02)
+
+
+### Features
+
+* add Docs, Sheets, and Drive comments ([#44](https://github.com/PanthroCorp-Limited/openclaw-skills/issues/44)) ([27a00fb](https://github.com/PanthroCorp-Limited/openclaw-skills/commit/27a00fbd16160cb5ba1938aa7398c082b2026d37)), closes [#40](https://github.com/PanthroCorp-Limited/openclaw-skills/issues/40)
+
 ## [0.4.3](https://github.com/PanthroCorp-Limited/openclaw-skills/compare/google-workspace/v0.4.2...google-workspace/v0.4.3) (2026-04-02)
 
 
