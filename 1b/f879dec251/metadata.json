@@ -1,0 +1,25 @@
+{
+  "cli_version": "0.5.1",
+  "checkpoint_id": "1bf879dec251",
+  "strategy": "manual-commit",
+  "branch": "fix/release-please-auto-merge",
+  "checkpoints_count": 1,
+  "files_touched": [
+    ".github/workflows/release-please-auto-merge.yml"
+  ],
+  "sessions": [
+    {
+      "metadata": "/1b/f879dec251/0/metadata.json",
+      "transcript": "/1b/f879dec251/0/full.jsonl",
+      "content_hash": "/1b/f879dec251/0/content_hash.txt",
+      "prompt": "/1b/f879dec251/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 320,
+    "cache_creation_tokens": 9210,
+    "cache_read_tokens": 1992428,
+    "output_tokens": 3530,
+    "api_call_count": 23
+  }
+}
