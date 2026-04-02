@@ -7,16 +7,17 @@ import (
 	"github.com/PanthroCorp-Limited/openclaw-skills/google-workspace/cmd"
 )
 
+// version is overridden at build time by GoReleaser via -X main.version=...
+var version = "dev"
+
 func getVersion() string {
-	// Try to read build info (works when built with `go build` or `go install`)
-	if info, ok := debug.ReadBuildInfo(); ok {
-		// Use the module version from build info
-		if info.Main.Version != "" {
-			return info.Main.Version
-		}
+	// For `go install module@vX.Y.Z` the module version is embedded in build info.
+	if info, ok := debug.ReadBuildInfo(); ok &&
+		info.Main.Version != "" &&
+		info.Main.Version != "(devel)" {
+		return info.Main.Version
 	}
-	// Fallback to dev if not available
-	return "dev"
+	return version
 }
 
 func main() {
