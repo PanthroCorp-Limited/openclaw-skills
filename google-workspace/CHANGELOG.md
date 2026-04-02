@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.3](https://github.com/PanthroCorp-Limited/openclaw-skills/compare/google-workspace/v0.4.2...google-workspace/v0.4.3) (2026-04-02)
+
+
+### Bug Fixes
+
+* pass version explicitly to clawhub ([#41](https://github.com/PanthroCorp-Limited/openclaw-skills/issues/41)) ([64d39ac](https://github.com/PanthroCorp-Limited/openclaw-skills/commit/64d39ac32023e85de75ea91b50d029dab53c7acb))
+
 ## [0.4.2](https://github.com/PanthroCorp-Limited/openclaw-skills/compare/google-workspace/v0.4.1...google-workspace/v0.4.2) (2026-04-02)
 
 
