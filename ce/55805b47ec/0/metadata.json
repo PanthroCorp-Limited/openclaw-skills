@@ -1,0 +1,47 @@
+{
+  "cli_version": "0.5.1",
+  "checkpoint_id": "ce55805b47ec",
+  "session_id": "705d5f7a-c4e0-4188-9214-cf99762ee2e5",
+  "strategy": "manual-commit",
+  "created_at": "2026-04-08T09:10:13.080492992Z",
+  "branch": "feat/aws-cli-skill",
+  "checkpoints_count": 3,
+  "files_touched": [
+    ".github/workflows/ci.yml",
+    ".github/workflows/release-please.yml",
+    ".release-please-config.json",
+    ".release-please-manifest.json",
+    "CLAUDE.md",
+    "README.md",
+    "aws-cli/.gitignore",
+    "aws-cli/CLAUDE.md",
+    "aws-cli/LICENSE",
+    "aws-cli/SKILL.md",
+    "aws-cli/scripts/package.sh",
+    "aws-cli/version.txt"
+  ],
+  "agent": "Claude Code",
+  "model": "claude-sonnet-4-6",
+  "turn_id": "30e927583df4",
+  "checkpoint_transcript_start": 286,
+  "transcript_lines_at_start": 286,
+  "token_usage": {
+    "input_tokens": 1750,
+    "cache_creation_tokens": 193897,
+    "cache_read_tokens": 17438382,
+    "output_tokens": 31973,
+    "api_call_count": 115
+  },
+  "session_metrics": {
+    "turn_count": 20
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-04-08T09:10:12.573938335Z",
+    "agent_lines": 353,
+    "human_added": 175,
+    "human_modified": 1,
+    "human_removed": 0,
+    "total_committed": 529,
+    "agent_percentage": 66.72967863894141
+  }
+}
