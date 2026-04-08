@@ -1,0 +1,23 @@
+{
+  "cli_version": "0.5.1",
+  "checkpoint_id": "9757ab36f689",
+  "strategy": "manual-commit",
+  "branch": "fix/token-usage-version-sync",
+  "checkpoints_count": 1,
+  "files_touched": null,
+  "sessions": [
+    {
+      "metadata": "/97/57ab36f689/0/metadata.json",
+      "transcript": "/97/57ab36f689/0/full.jsonl",
+      "content_hash": "/97/57ab36f689/0/content_hash.txt",
+      "prompt": "/97/57ab36f689/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 2332,
+    "cache_creation_tokens": 152387,
+    "cache_read_tokens": 19068181,
+    "output_tokens": 41780,
+    "api_call_count": 176
+  }
+}
