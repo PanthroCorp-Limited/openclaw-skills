@@ -13,7 +13,8 @@ Custom skills for [OpenClaw](https://openclaw.ai) agents, published to the [Claw
 |-------|-------------|--------|
 | [google-workspace](./google-workspace/) | Gmail, Calendar, Contacts, Drive (with comments), Docs, and Sheets | Published (`panthrocorp-google-workspace`) |
 | [zoho-mail](./zoho-mail/) | Full read/write Zoho Mail access (EU data centre) | Published (`panthrocorp-zoho-mail`) |
-| [aws-s3](./aws-s3/) | Self-contained AWS S3 SDK bundle for gateway containers | Pre-release (`panthrocorp-aws-s3`) |
+| [aws-s3](./aws-s3/) | Self-contained AWS S3 SDK bundle for gateway containers | Published (`panthrocorp-aws-s3`) |
+| [aws-cli](./aws-cli/) | AWS CLI v2 repackaged for gateway containers | Pre-release (`panthrocorp-aws-cli`) |
 
 ## Installation
 
@@ -23,6 +24,7 @@ Install any skill via clawhub:
 clawhub install panthrocorp-google-workspace
 clawhub install panthrocorp-zoho-mail
 clawhub install panthrocorp-aws-s3
+clawhub install panthrocorp-aws-cli
 ```
 
 ## Security

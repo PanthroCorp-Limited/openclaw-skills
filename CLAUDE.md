@@ -102,6 +102,19 @@ Release-please bot PRs must be merged manually. GitHub does not trigger `pull_re
 5. Add the new skill path to `.release-please-config.json` (with `release-type: "node"`) and `.release-please-manifest.json`.
 6. Add a `build-npm` style CI job and a publish job in the release workflow.
 
+### Repackaged binary skills
+
+1. Create a new directory at the repo root with `version.txt`, a `scripts/package.sh`, and no package manager files.
+2. Add a `SKILL.md` with YAML frontmatter (see `aws-cli/SKILL.md` for the schema). Use `requires.bins` for the binary name.
+3. Include an MIT-0 `LICENSE` file (clawhub requirement).
+4. Add the new skill path to `.release-please-config.json` (with `release-type: "simple"`) and `.release-please-manifest.json`.
+5. Add a CI job that packages and verifies the binary, and a publish job in the release workflow.
+6. No dependabot entry needed (no package ecosystem).
+
+### Multi-arch requirement
+
+All skills must produce release artifacts for both `linux/arm64` and `linux/amd64`. Go skills handle this via GoReleaser, npm bundles are platform-agnostic, and repackaged binary skills must download and package both architecture variants.
+
 ## Git conventions
 
 - Never commit directly to `main`. Use feature branches and PRs.

@@ -36,6 +36,18 @@
           "jsonpath": "$.version"
         }
       ]
+    },
+    "aws-cli": {
+      "release-type": "simple",
+      "component": "aws-cli",
+      "changelog-path": "CHANGELOG.md",
+      "extra-files": [
+        {
+          "type": "yaml",
+          "path": "SKILL.md",
+          "jsonpath": "$.version"
+        }
+      ]
     }
   },
   "initial-version": "0.1.0",
