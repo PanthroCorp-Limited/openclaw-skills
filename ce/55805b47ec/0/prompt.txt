@@ -955,3 +955,7 @@ The `curl -fsSL` call downloads over HTTPS only. There is no HTTP fallback. The 
 The critical remediation priority is Finding 1. Without cryptographic verification of the upstream binary, the entire skill is a supply chain risk. Pinning the version (Finding 2) and verifying the GPG signature or SHA-256 hash should be the first changes before this ships. Everything else is incremental hardening.</result>
 <usage><total_tokens>24951</total_tokens><tool_uses>13</tool_uses><duration_ms>85816</duration_ms></usage>
 </task-notification>
+
+---
+
+/gh-ship
