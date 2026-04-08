@@ -1,7 +1,7 @@
 ---
 name: Token Usage
 description: Multi-agent token burn analysis across all registered OpenClaw agents
-version: 0.1.0
+version: 0.2.1
 author: panthrocorp
 license: MIT-0
 metadata:
