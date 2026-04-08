@@ -77,3 +77,25 @@ git commit -m "feat: add token-usage skill directory with LICENSE and version"
 The files are ready and in place for commitment.</result>
 <usage><total_tokens>122544</total_tokens><tool_uses>17</tool_uses><duration_ms>52023</duration_ms></usage>
 </task-notification>
+
+---
+
+merge the release-please PR
+
+---
+
+is it on clawhub
+
+---
+
+link please
+
+---
+
+[Image #1]
+
+---
+
+https://clawhub.ai/panthrocorp/panthrocorp-token-usage
+
+has sensitive data in it.  It shows my agents name and what models i use
