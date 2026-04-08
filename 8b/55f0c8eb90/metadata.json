@@ -1,0 +1,23 @@
+{
+  "cli_version": "0.5.1",
+  "checkpoint_id": "8b55f0c8eb90",
+  "strategy": "manual-commit",
+  "branch": "fix/aws-cli-cross-arch",
+  "checkpoints_count": 1,
+  "files_touched": null,
+  "sessions": [
+    {
+      "metadata": "/8b/55f0c8eb90/0/metadata.json",
+      "transcript": "/8b/55f0c8eb90/0/full.jsonl",
+      "content_hash": "/8b/55f0c8eb90/0/content_hash.txt",
+      "prompt": "/8b/55f0c8eb90/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 1891,
+    "cache_creation_tokens": 334225,
+    "cache_read_tokens": 32160408,
+    "output_tokens": 69010,
+    "api_call_count": 227
+  }
+}
