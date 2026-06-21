@@ -42,7 +42,7 @@ jobs:
       run:
         working-directory: google-workspace
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
           ref: ${{ needs.release-please.outputs.gw_tag_name }}
@@ -97,7 +97,7 @@ jobs:
       run:
         working-directory: zoho-mail
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
           ref: ${{ needs.release-please.outputs.zm_tag_name }}
@@ -152,7 +152,7 @@ jobs:
       run:
         working-directory: aws-s3
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
           ref: ${{ needs.release-please.outputs.s3_tag_name }}
@@ -204,7 +204,7 @@ jobs:
       run:
         working-directory: aws-cli
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
           ref: ${{ needs.release-please.outputs.cli_tag_name }}
@@ -258,7 +258,7 @@ jobs:
       run:
         working-directory: token-usage
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
           ref: ${{ needs.release-please.outputs.tu_tag_name }}
