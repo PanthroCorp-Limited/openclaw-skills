@@ -55,7 +55,7 @@ jobs:
           git tag "$VERSION"
           echo "version=$VERSION" >> "$GITHUB_OUTPUT"
 
-      - uses: actions/setup-go@v6
+      - uses: actions/setup-go@v7
         with:
           go-version-file: google-workspace/go.mod
 
@@ -110,7 +110,7 @@ jobs:
           git tag "$VERSION"
           echo "version=$VERSION" >> "$GITHUB_OUTPUT"
 
-      - uses: actions/setup-go@v6
+      - uses: actions/setup-go@v7
         with:
           go-version-file: zoho-mail/go.mod
 
